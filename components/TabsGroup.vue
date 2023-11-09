@@ -6,13 +6,12 @@
     <v-tab
       v-for="tab in currentTabs"
       :key="tab"
-      :value="tab"
-      @click="goToTab"
+
+      @click="$emit('selectedTab', tab)"
     >
       {{ tab.title }}
     </v-tab>
   </v-tabs>
-  {{ tab }}
 </template>
 
 <script setup>

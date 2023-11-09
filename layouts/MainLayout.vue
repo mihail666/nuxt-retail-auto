@@ -101,8 +101,10 @@
           v-if="currentPage.enableTabs"
         >
           <TabsGroup
-            class="ms-2 mt-n4"
+            class="ms-2"
+            :value="tab"
             :currentPageType="currentPage.type"
+            @selectedTab="tab"
           />
         </template>
       </v-toolbar>
