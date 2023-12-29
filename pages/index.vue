@@ -9,6 +9,15 @@
         <CardCar :car="car" />
       </v-col>
     </v-row>
+    <v-row>
+      <v-col
+        v-for="car in appStore.cars"
+        :key="car.id"
+        cols="3"
+      >
+        <CardCar :car="car" />
+      </v-col>
+    </v-row>
   </MainLayout>
 </template>
 
